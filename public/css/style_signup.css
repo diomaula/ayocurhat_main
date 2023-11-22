@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    max-width: 750px;
+    padding: 30px;
+    margin: 0 28px;
+    box-shadow: 0 5px 10px #cecfd1;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.content-login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box:nth-child(2n) {
+    justify-content: end;
+}
+.input-box-login {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    padding-bottom: 15px;
+}
+.input-box-login label {
+    display: flex;
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin: 5px 0;
+    justify-content: center;
+    align-items: center;
+}
+.input-box-login input {
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-box label {
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.input-box input {
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-box input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+}
+.note {
+    display: flex;
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(135, 135, 135);
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.note a {
+    text-decoration: none;
+    color: rgb(57, 134, 234);
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.button-container button {
+    width: 20%;
+    padding: 10px;
+    font-size: 15px;
+    color: #f1f1f1;
+    border-radius: 50px;
+    background-color: #d770ae;
+    border: none;
+}
+.button-container a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+.button-container button:hover {
+    background-color: rgb#c86ba3;
+}
+.logo-container {
+    display: inline;
+    text-align: center;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .container {
+        min-width: 280px;
+    }
+    .content {
+        max-height: 380;
+        overflow: auto;
+    }
+    .input-box {
+        margin-top: 12px;
+        width: 100%;
+    }
+    .input-box:nth-child(2n) {
+        justify-content: space-between;
+    }
+}
